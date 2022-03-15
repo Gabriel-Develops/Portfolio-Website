@@ -110,7 +110,12 @@ footer {
 }
 #projects,
 #contact {
-  color: #015c30;
+  color: #000;
+  background-color: #fff;
+  opacity: 1;
+  background-image:  radial-gradient(#015c30 2px, transparent 2px), radial-gradient(#015c30 2px, #fff 2px);
+  background-size: 80px 80px;
+  background-position: 0 0,40px 40px;
 }
 
 /* HEADER & NAV */

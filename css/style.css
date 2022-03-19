@@ -200,13 +200,14 @@ main span {
   margin-top: 10px;
 }
 
-#contact form input {
+#contact form input[name="name"],
+#contact form input[name="email"] {
   width: calc(50% - (20px/2));
   height: 5rem;
   display: inline-block;
 }
 
-#contact form input:first-child {
+#contact form input[name="name"] {
   margin: 0 20px 20px 0;
 }
 

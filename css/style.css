@@ -56,12 +56,11 @@ h2 + p {
 }
 
 a {
-  color: #94c973;
   text-decoration: none;
+  color: black;
 }
 .highlight {
   color: #94c973;
-  font-size: inherit;
 }
 .highlight-alt {
   color: #015c30;
@@ -72,6 +71,13 @@ a {
 .bold-style-two {
   font-weight: 600;
 }
+.readable {
+  background: white;
+}
+.readable-helper {
+  width: max-content;
+}
+
 /* BUTTONS */
 .button-contact-form {
   height: 5rem;
@@ -102,20 +108,29 @@ body > section {
 }
 
 /* BACKGROUND COLOR */
-header, 
+header {
+  background: #00150a;
+} 
 main, 
-#process, 
-footer {
+#process {
   background: #015c30;
+  background-color: #015c30;
+  opacity: 1;
+  background-image: radial-gradient(circle at center center, #838383, #015c30), repeating-radial-gradient(circle at center center, #838383, #838383, 40px, transparent 80px, transparent 40px);
+  background-blend-mode: multiply;
 }
 #projects,
 #contact {
-  color: #000;
-  background-color: #fff;
+  color: #000000;
+  background-color: #ffffff;
   opacity: 1;
-  background-image:  radial-gradient(#015c30 2px, transparent 2px), radial-gradient(#015c30 2px, #fff 2px);
+  background-image:  radial-gradient(#89ad3c 2px, transparent 2px), radial-gradient(#89ad3c 2px, #fff 2px);
   background-size: 80px 80px;
   background-position: 0 0,40px 40px;
+}
+
+footer {
+  background: #00150a;
 }
 
 /* HEADER & NAV */
@@ -140,11 +155,24 @@ nav ul li {
 main {
   margin-top: 5rem;
 }
+main span {
+  font-size: inherit; /* Fixes sizing on span for first name */
+}
 
 /* PROJECTS SECTION */
-#projects section {
+#projects a {
   width: 33.3333%;
   float: left;
+  background: white;
+  text-align: center;
+}
+
+#projects a p {
+  text-align: start;
+}
+
+#projects a img {
+  width: min(95%, 500px);
 }
 
 /* PROCESS SECTION */
@@ -161,6 +189,17 @@ main {
 }
 
 /* CONTACT SECTION */
+#contact h2 + p {
+  padding-bottom: 0;
+}
+#contact h2 + p + p {
+  margin-top: 30px;
+}
+
+#contact form {
+  margin-top: 10px;
+}
+
 #contact form input {
   width: calc(50% - (20px/2));
   height: 5rem;
@@ -187,7 +226,7 @@ main {
 
 #contact form input:focus,
 #contact form textarea:focus {
-  border: 1px solid green;
+  border: 1px solid #015c30;
   outline: 0;
 }
 
@@ -195,7 +234,7 @@ main {
 footer {
   overflow: hidden;
   text-align: center;
-  padding: 5% 0;
+  padding: 2% 0;
   color: #d3e5e7;
 }
 
@@ -206,4 +245,72 @@ footer ul:first-child {
 footer ul li {
   display: inline-block;
   padding: 0 15px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* TYPOGRAPHY */
+@media screen and (max-width: 1080px) {
+  p, a, img, span, input, textarea, button {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 4rem;
+  }
+  
+}
+
+/* ORGANIZATION */
+@media screen and (max-width: 1324px) {
+  header,
+  main,
+  body > section {
+    padding: 0;
+  }
+  main,
+  body > section {
+    padding: 10% 5%;
+  }
+}
+
+
+/* HEADER & NAV */
+@media screen and (max-width: 900px) {
+  nav {
+    text-align: center;
+  }
+
+  nav ul {
+    float: none;
+  }
+
+  nav ul li {
+    padding: 0 30px;
+  }
+}
+
+
+/* PROJECTS */
+@media screen and (max-width: 1080px) {
+  #projects a {
+    width: 100%;
+  }
+}
+
+/* PROCESS & CONTACT*/
+@media screen and (max-width: 742px) {
+  #process section,
+  #contact form input[name="name"],
+  #contact form input[name="email"] {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }

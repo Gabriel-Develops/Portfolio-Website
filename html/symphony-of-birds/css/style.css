@@ -27,18 +27,29 @@ body {
   background-repeat: repeat-y;
 }
 
+input, button {
+  font-size: 32px;
+  border: 3px solid black;
+  background: white;
+  /* border-style: none; */
+}
+
+input {
+  border-radius: 50px 0 0 50px;
+  border-right: 0;
+}
+button {
+  border-radius: 0 50px 50px 0;
+  border-left: 0;
+}
+
 
 /******************************************/
 /* LAYOUT
 /******************************************/
-header {
 
+main {
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 10%;  
 }
-
-footer {
-
-}
-
-/******************************************/
-/* ADDITIONAL STYLES
-/******************************************/

@@ -28,21 +28,58 @@ body {
 }
 
 input, button {
-  font-size: 32px;
+  font-size: 35px;
   border: 3px solid black;
   background: white;
-  /* border-style: none; */
 }
 
 input {
-  border-radius: 50px 0 0 50px;
+  border-radius: 10px 0 0 10px;
   border-right: 0;
+  padding-left: 10px;
 }
 button {
-  border-radius: 0 50px 50px 0;
+  border-radius: 0 10px 10px 0;
   border-left: 0;
+  cursor: pointer;
+}
+button:hover {
+  background: gainsboro;
+}
+input:focus, button:focus {
+  outline: none;
 }
 
+/* IMG */
+#birds {
+  margin: 5%;
+}
+
+.image {
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.image > span {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 225px;
+  margin-left: 5px;
+  display: inline-block;
+  width: max-content;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px black;
+}
 
 /******************************************/
 /* LAYOUT

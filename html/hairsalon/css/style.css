@@ -201,6 +201,7 @@ main div a {
   display: inline-block;
   width: 20%;
   margin: 0 45px;
+  vertical-align: top;
 }
 #services div h3 {
   margin: 20px 0;

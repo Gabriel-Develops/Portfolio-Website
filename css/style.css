@@ -169,6 +169,8 @@ main span {
 
 #projects a p {
   text-align: start;
+  padding: 15px;
+  line-height: 3rem;
 }
 
 #projects a img {

@@ -17,6 +17,16 @@
 	clear: both;
 }
 
+h1 {
+  color: white;
+  font-size: 5rem;
+  font-family: 'Bitter', serif;
+  background: black;
+  padding: 3px;
+  backdrop-filter: blur(2px);
+  text-transform: uppercase;
+}
+
 /******************************************/
 /* BASE STYLES
 /******************************************/
@@ -88,5 +98,6 @@ input:focus, button:focus {
 main {
   width: max-content;
   margin: 0 auto;
-  margin-top: 10%;  
+  margin-top: 10%;
+  text-align: center; 
 }

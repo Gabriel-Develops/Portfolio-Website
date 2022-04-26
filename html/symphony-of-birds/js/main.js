@@ -69,6 +69,21 @@ function addPicofBird(bird, name) {
     })
 }
 
+// MODAL
+
+document.querySelector('#modal-button').addEventListener('click', showModal)
+
+function showModal() {
+    document.querySelector('#modal').style.display = 'initial'
+}
+
+document.querySelector('#modal-close').addEventListener('click', closeModal)
+document.querySelector('#modal-background').addEventListener('click', closeModal)
+
+function closeModal() {
+    document.querySelector('#modal').style.display = 'none'
+}
+
 
 // fetch(url)
 // .then(response => response.json())

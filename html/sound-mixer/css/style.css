@@ -1,0 +1,63 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************/
+/* BASE STYLES
+/******************************************/
+
+html {
+  background: #eb95e1;
+  font-size: 16px;
+}
+
+/* SOUND EFFECTS */
+
+.sound-effect {
+  position: relative;
+  border: 3px solid black;
+  width: calc(20% - 4rem);
+  margin: 2rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.sound-effect h2 {
+  cursor: pointer;
+  border: 1px solid blue;
+  width: max-content;
+  margin: 20px auto;
+  padding: 20px 100px;
+}
+
+.sound-effect button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sound-effect iframe {
+  display: none;
+}
+
+/* FOOTER */
+
+footer {
+  position: fixed;
+  bottom: 0;
+}

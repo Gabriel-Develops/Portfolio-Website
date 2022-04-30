@@ -22,15 +22,18 @@
 /******************************************/
 
 html {
-  background: #eb95e1;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
-  padding: 1rem;
 }
 
-/* body {
-  min-height: 90vh;
-} */
+/* https://cssgradient.io/gradient-backgrounds/ */
+body {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  min-height: 100vh;
+  padding: 1rem;
+  margin: 0;
+}
 
 /* MAIN */
 
@@ -73,9 +76,9 @@ form input:focus, form button:active {
 
 .sound-effect {
   position: relative;
-  background: blue;
-  border: 3px solid black;
-  border-radius: 100px;
+  background-color: #FFDEE9;
+  background-image: linear-gradient(28deg, #FFDEE9 0%, #B5FFFC 100%);
+  border-radius: 25px;
   width: calc(20% - 4rem);
   margin: 2rem;
   display: inline-block;
@@ -85,11 +88,12 @@ form input:focus, form button:active {
 
 .sound-effect h2 {
   cursor: pointer;
-  background: #0060df;
-  border-radius: 100px;
-  width: 90%;
-  margin: 20px auto;
-  padding: 20px 0;
+  height: 100%;
+  display: inline-block;
+  text-shadow: white 1px 1px;
+  padding: 35px 0;
+  width: 100%;
+  margin: 0;
 }
 
 .sound-effect button {

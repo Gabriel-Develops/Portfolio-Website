@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your very own Soundboard">
+    <meta name="keywords" content="custom, soundboard">
+    <title>Soundboard</title>
+	<link type="image/png" sizes="100x100" rel="icon" href="https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/34c1ee/external-sound-effect-science-smashingstocks-mixed-smashing-stocks.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet"> 
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<main>
+		<div id="title">
+			<img src="https://img.icons8.com/color/100/000000/twitch--v1.png"/><!--  
+		 --><h1>SoundBoard</h1><!--  
+		 --><img src="https://img.icons8.com/color/100/000000/youtube-play.png"/>
+		</div>
+		<div id="how-it-works">
+			<h2>How it works?</h2>
+			<p>Find a youtube video you want to use as a sound effect, then simply add the video id below along with a custom name for your sound.</p>
+			<p>The video id can be found in the url, please see the example below.</p>
+			<p>eg. https://www.youtube.com/watch?v=<b>Gyu82WG_edM</b></p>
+		</div>
+		<form action="">
+			<label for="title-input">Title: </label><input type="text" name="title-input" id="title-input" placeholder="Audience Clapping">
+			<label for="url-input">Video-ID: </label><input type="text"  name="url-input" id="url-input" placeholder="Gyu82WG_edM">
+			<button id="add-sound">Add</button>
+		</form>
+	</main>
+
+	<section id="sound-effects-container"></section>
+
+	<!-- <iframe src="https://www.youtube.com/embed/Gyu82WG_edM?autoplay=1" frameborder="0" allow="autoplay"></iframe> -->
+
+	<footer>
+		<p>See more of my work <a href="https://gabriel-dev.netlify.app/">here</a>.</p>
+	</footer>
+	
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

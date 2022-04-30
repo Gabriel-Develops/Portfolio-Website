@@ -1,0 +1,115 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************/
+/* BASE STYLES
+/******************************************/
+
+html {
+  background: #eb95e1;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1rem;
+}
+
+/* body {
+  min-height: 90vh;
+} */
+
+/* MAIN */
+
+main {
+  text-align: center;
+}
+
+main h1 {
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin: 0;
+}
+
+main img {
+  height: 3rem;
+  line-height: 3rem;
+  vertical-align: bottom;
+}
+
+#how-it-works {
+  text-align: start;
+  display: inline-block;
+}
+
+/* FORM */
+
+form input, form button {
+  border: 2px solid black;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  margin-right: 6px;
+}
+form input:focus, form button:active {
+  outline: 2px solid #0060df;
+}
+
+/* SOUND EFFECTS */
+
+.sound-effect {
+  position: relative;
+  background: blue;
+  border: 3px solid black;
+  border-radius: 100px;
+  width: calc(20% - 4rem);
+  margin: 2rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.sound-effect h2 {
+  cursor: pointer;
+  background: #0060df;
+  border-radius: 100px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px 0;
+}
+
+.sound-effect button {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  border-radius: 50%;
+  border: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  line-height: 0;
+  font-size: 1.5rem;
+}
+
+.sound-effect iframe {
+  display: none;
+}
+
+/* FOOTER */
+
+/* footer {
+  position: fixed;
+  bottom: 0;
+} */

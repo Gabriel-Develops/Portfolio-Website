@@ -80,6 +80,7 @@ form input:focus, form button:active {
   margin: 2rem;
   display: inline-block;
   text-align: center;
+  vertical-align: top;
 }
 
 .sound-effect h2 {

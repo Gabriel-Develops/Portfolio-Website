@@ -158,6 +158,9 @@ main {
 main span {
   font-size: inherit; /* Fixes sizing on span for first name */
 }
+main p:last-of-type {
+  margin-top: 4rem;
+}
 
 /* PROJECTS SECTION */
 #projects a {

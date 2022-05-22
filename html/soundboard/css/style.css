@@ -45,7 +45,7 @@ main h1 {
   display: inline-block;
   font-size: 3rem;
   line-height: 3rem;
-  margin: 0;
+  margin: 3rem 0;
 }
 
 main img {
@@ -54,7 +54,7 @@ main img {
   vertical-align: bottom;
 }
 
-#how-it-works {
+#instructions {
   text-align: start;
   display: inline-block;
 }
@@ -70,6 +70,50 @@ form input, form button {
 }
 form input:focus, form button:active {
   outline: 2px solid #0060df;
+}
+
+/* MODAL */
+#modal-container > button,
+#modal button:first-of-type {
+  border: 0;
+  border-radius: 100%;
+  height: 2.5rem;
+  width: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  padding: 0;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+#modal {
+  display: inline-block;
+  background: #ffffff;
+  position: fixed;
+  padding: 2rem;
+  width: 50%;
+  height: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 10px;
+}
+#modal h1 {
+  width: max-content;
+  margin: 1rem auto;
+}
+
+#modal-shadow {
+  display: inline-block;
+  background: rgba(0,0,0,0.75);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
 }
 
 /* SOUND EFFECTS */
@@ -112,9 +156,9 @@ form input:focus, form button:active {
   display: none;
 }
 
-/* FOOTER */
+/* MARGIN FOOTER */
 
-/* footer {
+footer {
   position: fixed;
   bottom: 0;
-} */
+}

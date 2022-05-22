@@ -25,7 +25,7 @@
 				<img src="https://img.icons8.com/color/100/000000/youtube-play.png"/>
 			</h1>
 		</div>
-		<div id="how-it-works">
+		<div id="instructions">
 			<h2>How it works?</h2>
 			<p>Find a youtube video you want to use as a sound effect, then simply add the url to the video below, along with a custom name for your sound.</p>
 			<p>eg. <b>https://www.youtube.com/watch?v=Gyu82WG_edM</b></p>
@@ -35,20 +35,52 @@
 				<a target="_blank" href="https://www.youtube.com/watch?v=UCq8l8dhn5U&list=PL6XlA5QFnsfq5gBn98TD_fb0uMmcmEXx4&index=13">Cartoon</a>
 			</p>
 		</div>
-		<form action="">
+		<form id="videoSearch" action="">
 			<label for="title-input">Title: </label><input type="text" name="title-input" id="title-input" placeholder="Audience Clapping">
 			<label for="url-input">URL: </label><input type="text"  name="url-input" id="url-input" placeholder="URL">
 			<button id="add-sound">Add</button>
 		</form>
 	</main>
 
+	<section id="modal-container">
+		<button>?</button>
+		<!-- Modal is hidden by default until button is clicked -->
+		<div id="modal">
+			<button>&#10799;</button>
+			<h1>Customize Appearance</h1>
+
+			<label for="instructionsCheck">Hide Instructions</label>
+			<input id="instructionsCheck" type="checkbox"><br>
+
+			<label for="videoSearchCheck">Hide Sound Effect Add Section</label>
+			<input id="videoSearchCheck" type="checkbox"><br>
+
+			<!-- COLOR CUSTOMIZATION -->
+			<label for="head">Background Color Left</label>
+			<input type="color" id="background-color-left" value="#0093E9"><br>
+			
+			<label for="head">Background Color Right</label>
+			<input type="color" id="background-color-right" value="#80D0C7"><br>
+			
+			<label for="head">Sound Effect Color Left</label>
+			<input type="color" id="sound-effect-color-left" value="#FFDEE9"><br>
+			
+			<label for="head">Sound Effect Color Right</label>
+			<input type="color" id="sound-effect-color-right" value="#B5FFFC"><br>
+
+			<button id="applyColor">Change Colors</button>
+			
+
+			<footer>
+				<p>See more of my work <a target="_blank" href="https://gabriel-dev.netlify.app/">here</a>. | Icons by <a target="_blank" href="https://icons8.com/">Icons8</a></p>
+			</footer>
+		</div>
+		<div id="modal-shadow"></div>
+	</section>
+
 	<section id="sound-effects-container"></section>
 
 	<!-- <iframe src="https://www.youtube.com/embed/Gyu82WG_edM?autoplay=1" frameborder="0" allow="autoplay"></iframe> -->
-
-	<footer>
-		<p>See more of my work <a target="_blank" href="https://gabriel-dev.netlify.app/">here</a>. | Icons by <a target="_blank" href="https://icons8.com/">Icons8</a></p>
-	</footer>
 	
 	<script type="text/javascript" src="js/objects.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>

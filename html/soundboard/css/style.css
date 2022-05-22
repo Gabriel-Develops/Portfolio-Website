@@ -88,7 +88,7 @@ form input:focus, form button:active {
 }
 
 #modal {
-  display: inline-block;
+  display: none;
   background: #ffffff;
   position: fixed;
   padding: 2rem;
@@ -106,7 +106,7 @@ form input:focus, form button:active {
 }
 
 #modal-shadow {
-  display: inline-block;
+  display: none;
   background: rgba(0,0,0,0.75);
   width: 100%;
   height: 100%;

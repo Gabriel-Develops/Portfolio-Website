@@ -181,7 +181,7 @@ main p:last-of-type {
 }
 
 #projects a img {
-  max-width: 500px;
+  max-width: 100%;
   max-height: 281px;
 }
 
@@ -311,8 +311,8 @@ footer ul li {
 
 /* PROJECTS */
 @media screen and (max-width: 1080px) {
-  #projects a {
-    width: 100%;
+  #projects section a {
+    flex-basis: 100%;
   }
 }
 

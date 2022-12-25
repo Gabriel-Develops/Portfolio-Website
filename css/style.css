@@ -163,9 +163,13 @@ main p:last-of-type {
 }
 
 /* PROJECTS SECTION */
+#projects section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #projects a {
-  width: 33.3333%;
-  float: left;
+  flex-basis: 33.3333%;
   background: white;
   text-align: center;
 }
@@ -177,7 +181,8 @@ main p:last-of-type {
 }
 
 #projects a img {
-  width: min(95%, 500px);
+  max-width: 500px;
+  max-height: 281px;
 }
 
 /* PROCESS SECTION */

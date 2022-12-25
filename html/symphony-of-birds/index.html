@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Symphony of Birds</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&display=swap" rel="stylesheet"> 
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<main>
+		<h1>Symphony of Birds</h1>
+		<input type="text"><button>Add to Symphony</button>
+	</main>
+
+	<!-- Birds container holding their sound, picture and name -->
+	<div id="birds"></div>
+
+	<!-- Default Rainforest Sound -->
+	<audio autoplay loop src="sounds/background-rainforest.wav"></audio>
+
+	<button id="modal-button">?</button>
+	<section id="modal">
+		<div id="modal-background"></div>
+		<div id="modal-container">
+			<button id="modal-close">&#215;</button>
+			<h2>How does it work?</h2>
+			<p>Symphony of Birds lets you create your very own symphony using bird sounds as instruments.</p>
+			<p>Simply type in the name of the bird, add it to the symphony and wait for it to start chirping. <br>
+			If you want to remove a bird, simply click on the image of that bird and it will be kicked out of the symphony.</p>
+			<p>The sounds are sourced from the <a href="https://xeno-canto.org/explore/api">Xenu Canto API</a>. <br>
+			The images of the birds are sourced from the <a href="https://imsea.herokuapp.com/">Imsea API</a>.</p>
+			<p>See more of my work <a href="https://gabriel-dev.netlify.app/">here</a>.</p>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -97,7 +97,10 @@ a {
 }
 
 /* ORGANIZATION */
-header, 
+nav {
+  padding-inline: 2rem;
+}
+
 main, 
 body > section {
   padding: 0 16%;
@@ -108,7 +111,7 @@ body > section {
 }
 
 /* BACKGROUND COLOR */
-header {
+nav {
   background: #00150a;
 } 
 main, 
@@ -134,21 +137,31 @@ footer {
 }
 
 /* HEADER & NAV */
-header {
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-block: 1rem;
+  align-items: center;
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 5rem;
+}
+nav h1 {
+  padding: 0;
+}
+nav img {
+  vertical-align: middle;
+}
+nav > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 nav ul {
-  float: right;
   list-style: none;
-}
-nav ul li {
-  display: inline-block;
-  padding-left: 6rem;
-  line-height: 5rem;
+  margin-left: auto;
+  display: flex;
+  gap: 6rem;
 }
 
 /* MAIN */
@@ -295,16 +308,26 @@ footer ul li {
 
 /* HEADER & NAV */
 @media screen and (max-width: 900px) {
-  nav {
-    text-align: center;
-  }
-
   nav ul {
-    float: none;
+    gap: 3rem;
   }
+}
 
-  nav ul li {
-    padding: 0 30px;
+@media screen and (max-width: 730px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  nav {
+    padding-inline: .5rem;
+  }
+  nav img {
+    display: none;
   }
 }
 

@@ -2,9 +2,13 @@
 My personal portfolio which aims to connects those who want to know more about me with my work. 
 
 **Link to project:** https://gabriel-dev.netlify.app/
-<!--
-![alt tag](https://i.imgur.com/4hWBW0J.jpg)
--->
+
+<p align="center">
+  <a href="https://gabriel-dev.netlify.app/">
+    <img src="gabriel-dev-preview-small.gif" max-width="1000px" alt="Portfolio"/>
+  </a>
+</p>
+
 ## How It's Made:
 
 **Tech used:** HTML, CSS, JavaScript

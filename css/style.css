@@ -59,6 +59,7 @@ h1 {
 .site_width_container {
   max-width: 1488px;
   margin-inline: auto;
+  padding-inline: 1rem;
 }
 
 .line {
@@ -221,6 +222,44 @@ main {
 
 .project--link_icon {
   fill: var(--off-color);
+}
+
+/* About */
+.about {
+  padding-bottom: 5rem;
+}
+
+.about--subtitle {
+  gap: 1rem;
+  align-items: center;
+}
+
+.about--bottom,
+.about--subtitle,
+.about--list_wrapper {
+  display: flex;
+}
+
+.about--bottom_section,
+.about--list {
+  flex: 1;
+}
+
+.about--bottom {
+  gap: 4rem;
+}
+
+.about--description {
+  margin: 0;
+}
+
+.about--list > ul {
+  list-style: "\2713";
+  padding: 0;
+}
+.about--list > ul li {
+  margin-left: .75rem;
+  padding-left: 1rem;
 }
 
 /* Footer */
